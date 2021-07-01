@@ -2,7 +2,7 @@
 
 Only the REACT frontend for the Django / Flask toy project.
 
-This repo consists of a source code of a Javascript to make an interactive student management system
+This repo consists of a source code of a Javascript to make an assignment management system
 using **ReactJs**
 
 ## How is it done?
