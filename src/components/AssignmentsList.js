@@ -10,7 +10,7 @@ const AssignmentsList = ({ assignments, setAssignments }) => {
 
   return (
     <React.Fragment>
-      <div className="book-list">
+      <div>
         {!_.isEmpty(assignments) ? (
           assignments.map((assignment) => (
             <Assignment key={assignment.id} {...assignment} handleRemoveAssignment={handleRemoveAssignment} />
