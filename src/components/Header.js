@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, Form, Button, FormControl, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Form, Button, FormControl, NavDropdown} from 'react-bootstrap';
+import { NavLink } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
@@ -11,12 +12,11 @@ const Header = () => {
   <Navbar.Collapse id="navbarScroll">
     <Nav
       className="mr-auto my-2 my-md-0"
-      navbarScroll
     >
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/add" className="link" >
+      <NavLink  className="navitem" to="/">Home</NavLink>
+      <NavLink className="navitem" to="/add" >
           Add Assignment
-      </Nav.Link>
+      </NavLink>
       <Form className="d-flex">
       <FormControl
         type="search"
